@@ -1,0 +1,533 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *::before, *::after{box-sizing:border-box;}
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+    color: #221E1F;
+}
+@media(max-width:375px){
+    body{
+        background-image: none;
+    }
+
+}
+img{
+    max-width:100%;
+    height: auto;
+    display: block;
+}
+a{text-decoration: none;}
+
+sub{
+    vertical-align: sub;
+}
+.container{
+    max-width: 1128px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+.nav{
+    margin-bottom: 24px;
+    position: relative;
+}
+.nav-bg1{
+    position: absolute;
+    z-index: -2;
+    width: 99.414348462%;
+    height: 470px;
+    background-color: #F7F9FD;
+    border-radius: 0px 0px 0px 300px;
+    top: -24px;
+}
+.nav-bg2{
+    position: absolute;
+    z-index: -1;
+    width: 64.787701317%;
+    height: 559px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg");
+    top: -24px;
+    right: 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.chartalklogo img{
+    width:60.572222222% ;
+    display: block;
+}
+.navbtn a{
+    display: block;
+    color: #FFFFFF;
+    background: #FF5D50;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+@media(max-width:375px){
+    .nav-bar{
+        margin-top: 16px;
+    }
+    .nav{
+        background: #fff;
+        border-bottom:  2px solid #FFD153 ;
+        padding-bottom: 16px;
+    }
+    .chartalklogo img{
+        width: 130.84px;
+    }
+    .nav-bg1{
+
+        width:100%;
+        height: 495px;
+        background-color: #F7F9FD;
+        border-radius: 0px 0px 0px 150px;
+        top: 56px;
+    }
+    .nav-bg2{
+
+        width: 100%;
+        height: 495px;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg");
+        top: 56px;
+        right: 0px;
+ 
+    }
+    
+
+}
+.banner h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 92px;
+}
+.banner p{
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 280px;
+}
+.slogantext{
+    text-align: center;
+    color: #221E1F;
+    font-size: 32px;
+    font-weight: bold;
+}
+@media(max-width:375px){
+    .banner h1{
+        font-size: 32px;
+        margin-top: 48px;
+    }
+    .banner p{
+        margin-bottom: 421px;
+    }
+    .slogantext{
+        font-size: 28px;
+        margin: 0 auto;
+        width: 89.0667%;
+    }
+}
+.priceplan_btn{
+    margin: 0 auto;
+    width: 67.647058823%;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.priceplan_btn ul{
+    display: flex;
+}
+.priceplan_btn li{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.button{
+    display: block;
+    text-align: center;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    padding-top: 12px;
+}
+.priceplan_btn li a {
+    width: 130px;
+    height: 50px;
+    color: #56c4c5;
+    font-size: 18px;
+
+
+}
+.priceplan_btn li a:active {
+    background: #56C4C5;
+    color: #FFFFFF
+    
+}
+@media(max-width:375px){
+    .priceplan_btn{
+        margin-left: 0;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+    .priceplan_btn ul{
+    overflow-x: auto;
+    padding-bottom: 10px;
+    }
+    .priceplan_btn li{
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+    .priceplan_btn li a {
+    width: 90px;
+    height: 40px;
+    font-size: 16px;
+    padding-top: 8px;
+    }
+}
+.priceplan{
+    margin-bottom: 100px;
+    position: relative;
+}
+.priceplan-bg{
+    position: absolute;
+    z-index: -1;
+    left: -267px;
+    top: 212px;
+}
+.priceplan-bg img{
+    height: 361px;
+    width: 361px;
+}
+.priceplan_item .priceplan_item_ul{
+    display: flex;
+    margin-right: -10.5px;
+    margin-left: -10.5px;
+}
+.priceplan_item li{
+    width: 50%;
+    padding-right: 10.5px;
+    padding-left: 10.5px;
+}
+.priceplan_item_shadow{
+    background: white;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding-bottom: 32px;
+}
+.priceplan_item li h3{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.priceplan_item li p{
+    text-align: center;
+    font-size: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.priceplan_card_equal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-bottom: 32px;
+}
+.priceplan_item_card{
+    background: #F5F5F5;
+    border-radius: 12px;
+    width: 42.6778454%;
+
+}
+.priceplan_item_card span{
+    display: block;
+    font-size: 12px;
+    padding-top: 24px;
+    margin: 0 auto;
+    text-align: center;
+}
+.priceplan_item_card .user{
+    display: block;
+    color: #56c4c5;
+    font-size: 32px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 24px;
+}
+.priceplan_item_card sub{
+    font-size: 12px;
+}
+.priceplan_item_card .dollar{
+    display: block;
+    color: #221E1F;
+    font-size: 32px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 24px;
+}
+.priceplan_functionlist{
+    padding-bottom: 32px;
+}
+.priceplan_functionlist li{
+    width: 100%;
+    margin-left: 29px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+.priceplan_functionlist li p,img{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.priceplan_functionlist img{
+    width: 19.56px;
+    height: 16px;
+    margin-right: 12.94px;
+}
+.priceplan_item_shadow .button{
+    width: 136px;
+    height: 49px;
+    color: #fff;
+    background: #56C4C5;
+    margin: 0 auto;
+    font-size: 18px;
+}
+@media(max-width:375px){
+    .priceplan-bg{
+        left: -108px;
+        top: 532px;
+    }
+    .priceplan-bg img{
+        height:204px;
+        width: 204px;
+    }
+    .priceplan_item .priceplan_item_ul{
+        flex-wrap: wrap;
+    }
+    .priceplan_item li{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .priceplan_item li h3 {
+        padding-top: 16px;
+    }
+    .priceplan_item li p {
+        padding-top: 24px;
+        padding-bottom: 16px;
+        font-size: 14px;
+    }
+    .priceplan_item_card span {
+        padding-top: 16px;
+    }
+    .priceplan_item_card .user {
+        font-size: 28px;
+        padding-bottom: 16px;
+    }
+    .priceplan_item_card .dollar {
+        font-size: 28px;
+        padding-bottom: 16px;
+    }
+    .priceplan_item_card {
+        background: #F5F5F5;
+        border-radius: 12px;
+        width:45.9%;
+    }
+
+    .priceplan_card_equal {
+        padding-right: 16px;
+        padding-left: 16px;
+        margin-bottom: 27px;
+    }
+    .priceplan_functionlist{
+        padding-bottom: 19px;
+    }
+    .priceplan_functionlist li {
+        align-items: start;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 16px;
+        text-align: left;
+    }
+    .priceplan_functionlist img {
+        width: 16px;
+        height: 14px;
+        margin-right: 16px;
+    }
+    .priceplan_functionlist li p ,img{
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: left;
+    }
+    .priceplan_functionlist li img{
+        margin-top: 3px;
+    }
+    .priceplan_item_shadow{
+        padding-bottom: 24px;
+    }
+
+  
+}
+.FAQ{
+    padding-top: 48px;
+    width: 83.0882%;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+.FAQ-flex{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    height: 58px;
+  
+}
+.FAQ-item{
+     box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-bottom: 16px;
+}
+.collapse-content {
+    padding-top: 8px;
+    padding-bottom: 32px;
+    color: #747474;
+    font-size: 16px;
+}
+.copyright{
+    text-align: center;
+    background-color: #F5F5F5;
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 100px;
+}
+@media(max-width:375px){
+    .FAQ{
+        padding-top: 32px;
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    .FAQ-flex{
+        height: 56px;
+      
+    }
+    .FAQ-item{
+       padding-right: 16px;
+       padding-left: 16px;
+   }
+   .FAQ-item img{
+    width: 16px;
+    height: 16px;
+   }
+   .collapse-content {
+    padding-top: 0px;
+    padding-bottom: 24px;
+
+    }
+    .copyright{
+        margin-top: 60px;
+    }
+    
+}
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 57px;
+    z-index: 99;
+    border: none; 
+    outline: none;
+    background-color: #56C4C5;
+    color: white; 
+    cursor: pointer;
+    padding-top: 0; 
+    border-radius: 50%; 
+    font-size: 18px; 
+    width: 71px;
+    height: 71px;
+    font-family: 'Wendy One';
+  }
+  @media(max-width:375px){
+    #myBtn {
+
+        bottom: 20px; 
+        right: 16px;
+        z-index: 99;
+        border: none; 
+        outline: none;
+        background-color: #56C4C5;
+        color: white; 
+        cursor: pointer;
+        padding-top: 0; 
+        border-radius: 50%; 
+        font-size: 14px; 
+        width: 50px;
+        height: 50px;
+        font-family: 'Wendy One';
+      }
+    
+  }
+  
